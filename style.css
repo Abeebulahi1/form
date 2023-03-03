@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(102deg, rgba(243, 241, 241, 0.849),rgba(148, 7, 7, 0.781));
+    overflow: hidden;
+}
+.container img{
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+.hero{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+.hero h1{
+   margin-bottom: 50px;
+   font-size: 40px;
+   font-weight: 700;
+   color: #333;
+   
+}
+.name{
+    padding: 10px 8px;
+    margin: 10px 0;
+    width: 300px;
+    border-radius: 0px;
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+    outline: none;
+}
+.name::placeholder{
+    color: rgba(255, 255, 255, 0.534);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn{
+    padding: 10px 20px;
+    color: #fff;
+    background: #333;
+    margin: 20px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .5s;
+    animation: slide 5s linear forwards ease-in-out;
+}
+@keyframes slide{
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+span{
+    font-weight: 500;
+    font-size: 17px;
+}
+span a{
+    text-decoration: none;
+}
+@media (max-width:700px){
+    .container{
+        background: rgba(150, 10, 10, 0.61);
+    }
+    .container img{
+        display: none;
+    }
+}
+@media (max-width:1000px){
+    .container{
+        background: rgba(150, 10, 10, 0.61);
+    }
+    .container img{
+        display: none;
+    }
+}
